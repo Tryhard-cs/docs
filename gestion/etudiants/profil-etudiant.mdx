@@ -1,0 +1,75 @@
+---
+title: "Profil Étudiant"
+description: "Consultation et gestion détaillées des informations essentielles de chaque élève : inscription, assiduité, paiements et accès à son compte personnel."
+---
+
+Le **Profil Étudiant** est une vue complète des données de chaque élève, accessible directement depuis le **tableau de la [Gestion des Étudiants](/gestion/etudiants)**. Il est organisé en **quatre onglets** distincts pour faciliter l'administration et le suivi :
+
+## 🧭 Navigation dans le Profil
+
+Une fois sur le profil de l'étudiant, vous naviguez entre les quatre sections suivantes via des onglets :
+
+### 1. 🧍 Profil (Informations Générales)
+
+Cet onglet regroupe les informations de base de l'étudiant.
+
+* **Information Générales :** Affiche le nom, groupe, email et établissement de l'étudiant.
+* **Séances :** Liste les informations des séances auxquels l'étudiant est inscrit.
+* **Coordonnées :** Informations de contact (e-mail, téléphone) et contacts alternatifs (parent, compte social, etc.).
+
+---
+
+### 2. ⏱️ Présence (Statistiques et Historique)
+
+Cette section vous permet de suivre l'assiduité de l'étudiant.
+
+<Columns cols={2}>
+ <div> {/* Ceci est la première colonne pour le texte */}
+ <ul className="custom-bullet-list">
+  <li>**Statistiques d'Assiduité :** Affichage clair du **nombre total d'absences** et de **présences**.</li>
+  <li>**Tableau des Séances :** Liste chronologique de toutes les séances auxquelles l'étudiant devait participer.</li>
+  <li>**Modification :** Vous avez la possibilité de **modifier l'état de présence ou d'absence** pour chaque séance passée directement depuis ce tableau.</li>
+ </ul>
+</div>
+<div> {/* Ceci est la deuxième colonne pour l'image */}
+ <img src="/images/etudiants-tableau.png" alt="Capture d'écran de l'onglet Présence du profil étudiant, montrant les statistiques d'assiduité et le tableau des séances."/>
+</div>
+</Columns>
+
+---
+
+### 3. 💰 Paiements (Finances et Solde)
+
+Gérez la situation financière de l'étudiant, les paiements effectués et ceux qui sont dus.
+
+* **Bloc "Solde de l'Étudiant" :**
+    * **Bouton Plus d'Options** (⋮) : Permet de **modifier manuellement le solde** (ajouter ou retirer des crédits).
+* **Bloc "Total Impayé" :**
+    * **Bouton Plus d'Options** (⋮) : Permet de **tout payer en une seule fois** en utilisant le solde disponible de l'étudiant.
+* **Tableau des Transactions :** Liste détaillée des paiements reçus et des montants facturés.
+    * **Modification :** Possibilité de **modifier l'état de paiement** d'une transaction ou de **payer un montant dû** en utilisant le solde.
+
+<Frame>![Texte alternatif décrivant l'image](/images/etudiants-tableau.png)</Frame>
+
+---
+
+### 4. 👤 Compte Étudiant (Accès à la Plateforme)
+
+<Danger> Cette Section est temporairement desactivé </Danger>
+
+Cette section permet d'activer le compte de l'étudiant afin qu'il puisse accéder à ses propres informations (paiements, séances, etc.) et interagir avec la plateforme.
+
+#### Création et Connexion
+
+1.  **Bouton "Créer un Compte Étudiant" :** En cliquant, une **fenêtre pop-up** s'affiche avec un **code de connexion unique**.
+2.  **Synchronisation :** L'étudiant utilise ce code pour se connecter à la plateforme HorsClass et synchroniser son profil.
+
+#### Fonctionnalités pour l'Étudiant
+
+Une fois le compte créé, l'étudiant peut :
+
+* Consulter ses **informations générales** et le récapitulatif de son **solde et des paiements dus**.
+* Faire des **demandes de changement de groupe** ou de **rejoindre une séance**.
+* **Gérer ses permissions :** Après la création du compte, cette page vous permet de définir précisément ce que l'étudiant est autorisé à voir ou à faire sur la plateforme.
+
+---

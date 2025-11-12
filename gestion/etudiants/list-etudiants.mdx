@@ -1,0 +1,62 @@
+---
+title: "Gestion des Étudiants"
+description: "Le centre de commande pour visualiser, rechercher et gérer le profil de tous vos élèves."
+---
+
+Le tableau de bord **Gestion des Étudiants** est l'endroit centralisé pour suivre tous les élèves inscrits à vos cours. Il vous offre une vue complète, ainsi que des outils de recherche et de filtrage rapides.
+
+## 🗃️ Aperçu du Tableau des Étudiants
+
+Voici à quoi ressemble la page de gestion des étudiants, avec ses composants principaux :
+
+![Capture d'écran de la page de gestion des étudiants montrant le tableau, les boutons d'action et la barre de recherche.](/images/etudiants-tableau.png)
+
+---
+
+## 🔍 Outils de Recherche et de Filtrage
+
+| Élément | Rôle |
+| :--- | :--- |
+| **Barre de Recherche** | Permet de rechercher un étudiant par **Nom** ou **Prénom**. La recherche s'effectue en temps réel dès la saisie. |
+| **Bouton Filtrer** | Ouvre un panneau latéral pour affiner la liste selon différents critères, comme le **Groupe attribué** ou le **Role**. |
+| **Boutons de Pagination** | Permettent de naviguer entre les différentes pages du tableau lorsque le nombre d'étudiants dépasse la limite d'affichage. |
+
+---
+
+## ➕ Ajouter un Nouvel Étudiant
+
+Pour inscrire un nouvel élève à vos cours :
+
+1.  Cliquez sur le bouton **Ajouter Étudiant** situé en haut à droite du tableau.
+2.  Un formulaire modal s'ouvrira (voir la section **[Ajouter un Étudiant](#)**).
+3.  Remplissez les informations requises (Nom, Prénom, Email, Groupe initial, etc.).
+4.  Cliquez sur **Enregistrer**. L'étudiant sera immédiatement ajouté au tableau et un profil lui sera créé.
+
+---
+
+## 📋 Le Tableau de Données
+
+Le tableau affiche les informations clés de vos étudiants en un coup d'œil :
+
+| Colonne | Description |
+| :--- | :--- |
+| **Nom de l'Étudiant** | Nom et prénom complets. |
+| **Groupe(s)** | Les groupes auxquels l'étudiant est actuellement affecté. |
+| **Role** | Role de l'étudiant dans le groupe |
+| **Action** | Options pour gérer l'étudiant (Voir, Modifier, Supprimer). |
+
+### Options d'Action Détaillées
+
+La colonne **Action** fournit des boutons pour effectuer des opérations rapides sur l'étudiant sélectionné :
+
+* **Voir :** Ouvre la page **[Profil Étudiant](/gestion/profil-etudiant)** pour consulter l'historique complet (sessions, finances, etc.).
+* **Modifier :** Ouvre un formulaire d'édition rapide pour mettre à jour les informations de base de l'étudiant.
+* **Supprimer :** Retire définitivement l'étudiant de votre base de données. Une fenêtre de confirmation s'affiche avant suppression.
+
+<Card
+  title="Aller au Profil Étudiant"
+  icon="user-tag"
+  href="/gestion/profil-etudiant"
+>
+  Découvrez le guide pour visualiser et modifier toutes les informations détaillées d'un élève.
+</Card>

@@ -1,122 +1,106 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "HorsClass Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4379EE",
+    "light": "#4379EE",
+    "dark": "#4379EE"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/logo-icon-horsclass.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Premiers Pas",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "authentification",
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Tableau de Bord",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "dashboard"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Groupes",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "gestion/groupes/list-groupes",
+              "gestion/groupes/profil-groupe",
+              "gestion/groupes/ajouter-groupe"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Étudiants",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "gestion/etudiants/list-etudiants",
+              "gestion/etudiants/profil-etudiant",
+              "gestion/etudiants/ajouter-etudiant"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Planification",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "planification/calendrier",
+              {
+                "group": "Séances",
+                "pages": [
+                  "planification/seances/list-seances",
+                  "planification/seances/profil-seance",
+                  "planification/seances/ajouter-seance"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Finances",
+            "pages": [
+              "finances/paiements",
+              "finances/ajouter-facture",
+              "finances/ajouter-paiement"
+            ]
+          },
+          {
+            "group": "Mon Compte & Réglages",
+            "pages": [
+              "compte/profil",
+              "compte/notifications",
+              "compte/abonnement"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo-black-horsclass.svg",
+    "dark": "/images/logo-white-horsclass.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact & Support",
+        "href": "mailto:contact@horsclass.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Accéder à l'App",
+      "href": "https://prof.horsclass.com/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

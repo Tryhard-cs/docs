@@ -1,80 +1,108 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: '🚀 Guide de Démarrage Rapide'
+description: 'Votre premier scénario d''utilisation : de la création de groupe au suivi des payements.'
 ---
 
-## Get started in three steps
+Bienvenue sur HorsClass ! Ce guide est conçu pour vous rendre opérationnel en quelques minutes.
 
-Get your documentation site running locally and make your first customization.
+Nous allons suivre le scénario d'utilisation le plus courant pour un professeur :
+1.  Créer un groupe d'étudiants.
+2.  Planifier les séances pour ce groupe.
+3.  Gérer une séance (prendre les présences).
+4.  Confirmer les payements pour cette séance.
 
-### Step 1: Set up your local environment
+---
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+### Étape 1 : Créer votre premier Groupe
 
-### Step 2: Deploy your changes
+Le **Groupe** est le cœur de votre organisation. C'est là que vous allez lier vos étudiants et leurs séances de cours.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+1.  Depuis le menu principal, allez à la section **"Groupes"**.
+2.  Cliquez sur le bouton **"Ajouter un Groupe"** (ou l'icône "+").
+3.  Remplissez le **Nom** du groupe (ex: "Groupe Maths Lundi 18h"). C'est le champ le plus important.
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
 
-### Step 3: Go live
+4.  Plus bas dans le même formulaire, trouvez la section **"Membres"** et cliquez sur **"Ajouter Étudiant"**.
+    * Vous pouvez **"Créer un Nouvel Étudiant"** (s'il n'est pas encore dans votre base) ou ajouter un **"Étudiant Existant"**.
+    * Comme c'est votre première utilisation cliquez sur Créer un Nouvel Étudiant.
+    * Vous devez au moins choisir un étudiant comme responsable (pour éditer les roles cliquer sur **Ajouter un Étudiant Existant**)
+    * Entrer uniquement le nom des étudiants pour l'instant (c'est le seule champ obligatoire)
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+5.  Encore plus bas, trouvez la section **"Séances"** et cliquez sur **"Ajouter Séance"**.
+    * Entrez les informations de base de la séance
+    * Cliquez sur le champ **date** pour définir la date et l'heure de la séance (Nous n'utiliserons pas le bouton mettre depuis le calendrier pour l'instant)
 
-## Next steps
+6.  Cliquez sur **"Confirmer"** tout en bas de la page (ignorez les sections contact et remarques).
 
-Now that you have your docs running, explore these key features:
+> **Bravo !** Votre groupe est créé, avec ses membres et son emploi du temps. Les séances que vous avez planifiées sont maintenant visibles dans votre Calendrier.
 
-<CardGroup cols={2}>
+<Info> La partie contact est une section optionnelle pour ajouter des informations de contact supplémentaires pour le groupe (lien discussion messenger, etc..) </Info>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card
+  title="Pour en savoir plus : Gérer les Groupes"
+  icon="users"
+  href="gestion/groupes/ajouter-groupe">
+  Découvrez toutes les options du formulaire de groupe, y compris la gestion des contacts, les remarques, et plus encore.
 </Card>
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
+---
+
+### Étape 2 : Prendre la Présence pour une Séance
+
+Le jour du cours est arrivé. Voici comment gérer la présence de vos étudiants.
+
+1.  Allez à l'écran **"Calendrier"** depuis le menu principal.
+2.  Vous verrez toutes vos séances planifiées. Cliquez sur la séance d'aujourd'hui.
+3.  Vous êtes maintenant sur la page de détails de cette séance.
+4.  Naviguez vers l'onglet **"Présence"**.
+5.  Cliquer sur fiche de présnce pour commencer a prendre la présence.
+6.  Vous verrez la liste des étudiants inscrits à cette séance. Marquez simplement qui est **"Présent"** ou **"Absent"**.
+7. Quitter cet écran, vous verez alors un tableau avec l'état de présence de vos étudiants.
+
+<Tip> Marquer **Inconnu** les Étudiants dont vous n'étes pas sur de l'état de présence </Tip>
+
+> **Note :** Pour plus de détails sur la gestion des séances. consultez la documentation complète de la section "Séances".
+
+<Card
+  title="Pour en savoir plus : La Page Séance"
+  icon="calendar"
+  href="planification/seances/profil-seance">
+  Apprenez à gérer tous les aspects d'une séance : détails, présences, membres et historique.
 </Card>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
+---
+
+### Étape 3 : Confirmer les Payements de la Séance
+
+Après avoir pris les présences, vous souhaitez peut-être confirmer qui a payé pour cette séance.
+
+1.  Sur la même page de détails de la séance (où vous étiez pour la présence), allez à l'onglet **"Membres"**.
+2.  Vous voyez la liste des étudiants participant à cette séance.
+3.  Cliquez sur le menu **⋮** a la fin de ligne d'un étudiant puis sur **Voir**.
+4.  Dans son profil, naviguez vers l'onglet **"Payements"**.
+5.  Vous devriez voir une ligne de payement "Non Payé" correspondant à la séance d'aujourd'hui.
+6.  Cliquez sur le menu **⋮** à droite de cette ligne et sélectionnez **"Payé"**.
+
+> **C'est fait !** Le payement est maintenant marqué comme "Payé" et sera comptabilisé dans votre bilan financier (dans la section "Payements et Factures"). Répétez l'opération pour les autres étudiants si nécessaire.
+
+<Card
+  title="Pour en savoir plus : Le Profil Étudiant"
+  icon="user"
+  href="gestion/etudiants/profil-etudiant">
+  Explorez le profil complet d'un étudiant pour voir ses informations, ses groupes, son historique de payements et ses présences.
 </Card>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+---
 
-</CardGroup>
+## C'est Terminé !
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+Vous avez complété le cycle de vie de base d'une séance.
+
+Vous savez maintenant comment :
+* Organiser vos étudiants dans des **Groupes**.
+* Planifier des **Séances** dans le **Calendrier**.
+* Gérer la **Présence**.
+* Suivre les **Payements** liés à une séance.
+
+Explorez les autres sections pour découvrir des fonctionnalités plus avancées !

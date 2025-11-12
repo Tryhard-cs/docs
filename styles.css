@@ -1,0 +1,21 @@
+#table-of-contents {
+  padding-left: 0px !important;
+}
+
+#table-of-contents-layout {
+ padding-left: 0px !important;
+ width: 16rem;
+}
+
+.custom-bullet-list {
+    /* Garantit la puce (disc) et corrige le débordement */
+    list-style-type: disc !important; 
+    padding-left: 0 !important; 
+    margin-left: 1em !important; 
+}
+
+/* 2. Style pour les LI à l'intérieur de cette classe spécifique */
+.custom-bullet-list li {
+    /* Ajout de l'espacement vertical entre les éléments */
+    margin-bottom: 8px; 
+}

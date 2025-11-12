@@ -1,0 +1,73 @@
+---
+title: "Ajouter ou Modifier un Étudiant"
+description: "Processus guidé pour l'enregistrement complet d'un étudiant, incluant ses coordonnées, son affiliation à un groupe et ses informations personnelles."
+---
+
+La page **Ajouter Étudiant** (ou **Modifier Étudiant** en cas d'édition) est l'interface dédiée à l'enregistrement des nouveaux élèves ou à la mise à jour des informations existantes. Elle est structurée en plusieurs sections claires.
+
+---
+
+## 1. ℹ️ Informations Générales
+
+Cette section regroupe les données d'identification et de contact principales de l'étudiant.
+
+| Champ | Type | Obligatoire | Description |
+| :--- | :--- | :--- | :--- |
+| **Nom** | Texte | Oui | Nom complet de l'étudiant. |
+| **Université** | Texte | Non | Université ou établissement fréquenté par l'étudiant. |
+| **Email** | Texte | Non | Adresse e-mail principale de l'étudiant. |
+| **Téléphone** | Texte | Non | Numéro de téléphone principal de l'étudiant. |
+
+---
+
+## 2. 👥 Ajout à un Groupe
+
+Cette section permet d'associer l'étudiant à un groupe existant dès sa création.
+
+1.  **Question :** "Ajouter à un groupe ?" (Options : **Oui** / **Non**)
+2.  Si vous sélectionnez **Oui**, un menu déroulant apparaît :
+    * **Champ "Groupe" :** Permet de sélectionner le groupe de destination parmi la liste de vos groupes actifs.
+
+> **Note :** Si vous accédez à ce formulaire directement depuis la page de création d'un groupe, le groupe sera déjà sélectionné et l'option de modification sera désactivée.
+
+---
+
+## 3. 📞 Contacts
+
+Cette section est conçue pour enregistrer des contacts supplémentaires liés à l'étudiant (par exemple, les parents, un tuteur, ou d'autres moyens de communication).
+
+Chaque contact se compose de trois champs :
+* **Nom :** Le nom de la personne ou l'alias du contact (ex: *Mère*, *Parent de l'élève*).
+* **Type :** Le moyen de communication (ex: *Téléphone*, *Compte Facebook*, *Lien Skype*).
+* **Coordonnées :** La donnée concrète (numéro, lien, adresse e-mail).
+
+Vous utilisez le bouton **"Ajouter le Contact"** pour insérer ce nouveau moyen de contact dans le tableau récapitulatif.
+
+---
+
+## 4. 📝 Remarques
+
+Ce champ de texte libre est destiné à toute information que vous jugez pertinente et qui n'a pas sa place dans les champs précédents.
+
+* **Utilisation :** Pour noter des détails spécifiques sur les besoins de l'étudiant, son historique, des arrangements particuliers, etc.
+
+---
+
+## 5. 📸 Photo de Profil
+
+Cette section vous permet de téléverser une photo pour l'étudiant.
+
+* **Option :** Le widget d'envoi de photo permet de choisir une image depuis votre appareil pour l'utiliser comme photo de profil de l'étudiant.
+
+---
+
+## 🚀 Actions et Validation
+
+Une fois toutes les informations remplies :
+
+| Bouton | Action |
+| :--- | :--- |
+| **Confirmer** | **(Ajouter / Enregistrer)** Valide le formulaire, crée (ou met à jour) l'étudiant, téléverse l'image et l'associe au groupe sélectionné. |
+| **Annuler** | Ferme le formulaire sans enregistrer les modifications. |
+
+Voulez-vous que nous continuions avec la section **Finances et Paiements** maintenant, en commençant par la page `finances/paiements` ?

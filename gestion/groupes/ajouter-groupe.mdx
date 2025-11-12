@@ -1,0 +1,90 @@
+---
+title: 'Ajouter / Modifier un Groupe'
+description: 'Guide pour le formulaire de création et de modification des groupes.'
+---
+
+## Le Formulaire "Groupe"
+
+Ce formulaire est l'endroit central pour créer un nouveau groupe d'étudiants ou pour modifier les détails d'un groupe que vous avez déjà créé.
+
+Il fonctionne de deux façons :
+* **Mode Ajout :** Vous l'utilisez pour créer un tout nouveau groupe.
+* **Mode Modification :** Quand vous choisissez un groupe existant (depuis votre liste de groupes), ce même formulaire s'ouvrira, mais déjà rempli avec les informations de ce groupe, prêt à être modifié.
+
+---
+
+### 1. Informations Générales
+
+Cette section concerne l'identité de base du groupe.
+
+* **Nom :** Le nom d'affichage du groupe (ex: "Groupe Lundi 18h - Maths").
+    <Warning> **Important :** Ce champ est **obligatoire**. Vous ne pouvez pas enregistrer un groupe sans nom. </Warning>
+* **Établissement :** L'établissement d'origine des étudiants (ex: "Lycée Saint-Louis", "Université de Tunis"). Ce champ est optionnel.
+
+---
+
+### 2. Membres
+
+Cette section vous permet de gérer les étudiants qui font partie de ce groupe.
+
+En cliquant sur le bouton **"Ajouter Étudiant"**, un petit menu vous propose deux choix :
+
+* **Nouveau Étudiant :**
+    * **Action :** Vous amène à l'écran "Ajouter Étudiant".
+    * **Objectif :** Vous permet de créer un tout nouveau profil étudiant. Une fois créé, cet étudiant est automatiquement ajouté à la liste des membres de ce groupe.
+
+* **Étudiant Existant :**
+    * **Action :** Ouvre une petite fenêtre (pop-up).
+    * **Objectif :** Vous permet de rechercher et de sélectionner un ou plusieurs étudiants déjà enregistrés dans votre application pour les ajouter à ce groupe.
+
+Une fois les étudiants ajoutés, ils apparaissent dans un tableau. Vous pouvez alors :
+* **Définir un Responsable :** Vous devez désigner au moins un étudiant comme "Responsable" (leader) du groupe.
+* **Supprimer :** Retirer un étudiant de la liste en cliquant sur l'icône de suppression.
+
+<Warning> **Note :** Vous ne pourrez pas enregistrer le groupe si **aucun membre** n'est désigné comme **"Responsable"**. L'application vous le rappellera. </Warning>
+
+---
+
+### 3. Séances
+
+Cette section gère les cours associés à ce groupe.
+
+En cliquant sur le bouton **"Ajouter Séance"**, un petit menu apparaît :
+
+* **Nouvelle Séance :**
+    * **Action :** Vous amène à l'écran "Ajouter Séance".
+    * **Objectif :** Créer une nouvelle séance (ponctuelle ou récurrente) qui sera automatiquement liée à ce groupe.
+
+* **Séance Existante :**
+    * **Action :** Ouvre une petite fenêtre (pop-up).
+    * **Objectif :** Sélectionner une séance déjà créée (peut-être pour un autre groupe ou étudiant) et y ajouter ce groupe.
+
+Les séances ajoutées s'affichent dans une liste. Vous pouvez également **supprimer** une séance de ce groupe.
+
+---
+
+### 4. Contact
+
+Cette section vous permet d'ajouter des informations de contact spécifiques au groupe.
+
+* Vous pouvez ajouter plusieurs contacts (ex: Téléphone, Email, lien WhatsApp du groupe, etc.).
+* Chaque contact a un **type** (ex: "Email") et une **donnée** (ex: "groupe.maths@exemple.com").
+* Vous pouvez ajouter, modifier ou supprimer des contacts directement ici.
+
+---
+
+### 5. Remarques
+
+Un champ de texte libre pour ajouter toute information supplémentaire, note ou mémo concernant le groupe. Ce champ est optionnel.
+
+---
+
+### 6. Actions (Annuler / Confirmer)
+
+En bas du formulaire, vous trouverez deux boutons :
+
+* **Annuler :** Annule toutes les modifications en cours et vous ramène à l'écran précédent (la liste des groupes).
+* **Confirmer :**
+    1.  **Vérifie les infos :** S'assure que le champ **Nom** n'est pas vide et qu'il y a au moins un **Responsable** parmi les membres.
+    2.  **Enregistre les données :** Crée le nouveau groupe ou met à jour le groupe existant.
+    3.  Vous ramène à l'écran précédent avec une notification pour vous dire si tout s'est bien passé.
